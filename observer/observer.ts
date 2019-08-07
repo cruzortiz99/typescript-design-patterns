@@ -65,11 +65,11 @@ class Fan implements Observer {
         }
     }
 }
-
+// Create the subject
 let weatherStation = new WeatherStation();
-
+// Create the observers of the subject
 let tempDisplay = new TemperatureDisplay(weatherStation);
 let fan = new Fan(weatherStation);
-
+// Every change on the subject, emits a change in the observers
 weatherStation.setTemperature(20);
 weatherStation.setTemperature(30);
