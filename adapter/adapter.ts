@@ -19,7 +19,8 @@ class GooglePixel implements Android {
 }
 
 // -----
-// Adapts One class, so it can execute similar functions that are call different for example.
+// Adapts One class, so it can execute functions calling the method like the end class
+// Useful to adapt differents classes and make them compatible
 class LightningToMicroUSBAdapter implements Android {
     iphoneDevice: IPhone;
 
