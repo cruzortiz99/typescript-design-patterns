@@ -77,9 +77,12 @@ class RearFacingSeats extends CarOptions {
 }
 
 // ------------------------------ Configure our Tesla! ------------------------------
+// Create a simple car 
 let myTesla = new ModelS();
+// Add specifications of the car and updates some attributes
 myTesla = new SmartAirSuspension(myTesla);
+// Add specifications of the car and update some attributes
 myTesla = new RearFacingSeats(myTesla);
-
+// Testing the changes of the car
 console.log(myTesla.cost());
 console.log(myTesla.getDescription());
