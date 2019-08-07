@@ -9,10 +9,10 @@ module test {
     }
 
     class Order {
-        private cancelledOrderState: State;
-        private paymentPendingState: State;
-        private orderShipedState: State;
-        private orderBeingPrepared: State;
+        public cancelledOrderState: State;
+        public paymentPendingState: State;
+        public orderShipedState: State;
+        public orderBeingPrepared: State;
 
         private currentState: State;
 
