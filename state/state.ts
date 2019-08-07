@@ -9,12 +9,12 @@ module test {
     }
 
     class Order {
-        public cancelledOrderState: State;
-        public paymentPendingState: State;
-        public orderShipedState: State;
-        public orderBeingPrepared: State;
+        private cancelledOrderState: State;
+        private paymentPendingState: State;
+        private orderShipedState: State;
+        private orderBeingPrepared: State;
 
-        public currentState: State;
+        private currentState: State;
 
         constructor() {
             this.cancelledOrderState = new CancelledOrderState(this);
@@ -113,9 +113,9 @@ module test {
             console.log('Order is already shipped.');
         }
     }
-
+    // Useful to restrict or set a flow of the possibles states of a class
     let order = new Order();
-
+    // After set a state you can se if can switch to an other
     order.getCurrentState().verifyPayment();
     order.getCurrentState().shipOrder();
     order.getCurrentState().cancelOrder();
