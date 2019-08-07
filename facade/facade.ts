@@ -101,11 +101,13 @@ class HomeTheaterFacade{
 }
 
 // ----
+// Basics methods or features
 let bluray = new BlurayPlayer();
 let amp = new Amplifier();
 let lights = new Lights();
 let tv = new TV();
 let popcornMaker = new PopcornMaker();
-
+// Hides complex implementations or methods from the client.
 let hometheater = new HomeTheaterFacade(amp, bluray, lights, tv, popcornMaker);
+// Has a standar setup in every method for the differents implementations
 hometheater.watchMovie();
